@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Indie-Flower-Regular';
+  src:url('webfonts_Indie-Flower-Regular/Indie-Flower-Regular.ttf.woff') format('woff'),
+      url('webfonts_Indie-Flower-Regular/Indie-Flower-Regular.ttf.svg#Indie-Flower-Regular') format('svg'),
+      url('webfonts_Indie-Flower-Regular/Indie-Flower-Regular.ttf.eot'),
+      url('webfonts_Indie-Flower-Regular/Indie-Flower-Regular.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.noSpace{
+  padding: 0%;
+  margin: 0%;
+}

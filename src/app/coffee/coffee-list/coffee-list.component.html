@@ -1,0 +1,58 @@
+<div class="container">
+  <!--Titulo-->
+  <div class="row">
+    <div class="col mt-5">
+      <h3 style="font-family: Indie-Flower-Regular;">El aroma mágico</h3>
+    </div>
+  </div>
+
+  <hr class="bg-dark border-2 border-top border-dark noSpace">
+
+  <!--Banner Imagen-->
+  <div class="row mt-3">
+    <div class="col-12">
+      <img class="banner" src="../../../assets/Coffee Banner.png" alt="Coffee Banner">
+    </div>
+  </div>
+
+  <hr class="bg-dark border-2 border-top border-dark">
+
+  <!--Tabla-->
+  <div class="row">
+    <div class="col-8">
+      <table class="table">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Region</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let coffee of coffees" class="listCoffees">
+            <th scope="row" class="id">{{coffee.id}}</th>
+            <td class="nombre">{{coffee.nombre}}</td>
+            <td class="tipo">{{coffee.tipo}}</td>
+            <td class="region">{{coffee.region}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--Contadores-->
+  <div class="row">
+    <div class="col">
+      <p class="noSpace">Total café de origen: {{getCountOrigen()}}</p>
+      <p class="noSpace">Total Café blend: {{getCountBlend()}}</p>
+    </div>
+  </div>
+
+  <div style="height: 70px;"></div>
+
+  <footer class="mt-5">
+    <p class="text-center">Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico</p>
+  </footer>
+
+</div>
